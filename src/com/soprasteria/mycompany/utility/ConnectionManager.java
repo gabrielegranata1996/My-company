@@ -43,6 +43,8 @@ public class ConnectionManager {
 		}
 
 	}
+	
+	//COMMENTO DI PROVA
 
 	/**
 	 * getDataSource --> set url, user, password and driver
