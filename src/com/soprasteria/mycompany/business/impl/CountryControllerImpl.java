@@ -1,4 +1,3 @@
-
 package com.soprasteria.mycompany.business.impl;
 
 import java.sql.Connection;
