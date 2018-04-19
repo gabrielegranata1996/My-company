@@ -26,7 +26,6 @@ public class ConnectionManager {
 			conn = null;
 		}
 		return conn;
-
 	}
 
 	/**

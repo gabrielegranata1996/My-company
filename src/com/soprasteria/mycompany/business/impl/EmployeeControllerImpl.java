@@ -492,10 +492,11 @@ public class EmployeeControllerImpl extends EntityController implements Employee
 		return ris;
 	}
 
+
+	@Override
 	/**
 	 * METHOD FIND EMPLOYEE
 	 */
-	@Override
 	public Employee findEmployee(String emailColumnValue, String firstNameColumnValue, String lastNameColumnValue) {
 		Employee employee = new Employee();
 
@@ -520,8 +521,12 @@ public class EmployeeControllerImpl extends EntityController implements Employee
 		}
 		return employee;
 	}
-
-	// ALTERNATIVE FIND EMPLOYEE WITH NEW CLASSES (EntityFilter AND RecordFilter)
+	
+	/**
+	 * ALTERNATIVE FIND EMPLOYEE WITH NEW CLASSES (EntityFilter AND RecordFilter)
+	 * @param entityFilter
+	 * @return
+	 */
 	public List<Employee> findEmployee(EntityFilter entityFilter) {
 		List<Employee> listEmployee = new ArrayList<Employee>();
 
